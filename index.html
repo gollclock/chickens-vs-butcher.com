@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chickens vs Butchers</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            position: relative;
+        }
+        .half {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .left {
+            background-image: url('https://media1.thehungryjpeg.com/thumbs2/ori_3746465_7md0uvhkzrkuvrb1fhhuwbyqajrw6lofpjeqddfh_happy-butcher-vector-standing-butcher-man-with-knife-natural-meat-for-steak-meat-market-storeroom-advertising-concept-cartoon-isolated-illustration.jpg');
+        }
+        .right {
+            background-image: url('https://chickenpets.com/wp-content/uploads/3994-different-chicken-breeds.png');
+        }
+        .text {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 10;
+        }
+        .vs {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="half left"></div>
+        <div class="half right"></div>
+        <div class="vs">VS</div>
+        <div class="text">
+            <h1>Chickens vs Butchers</h1>
+            <p>On the left, we have the skillful and dedicated butcher, mastering the art of meat preparation. Their tools and expertise ensure quality cuts for your culinary needs.</p>
+            <p>On the right, we have the noble chickens, a symbol of farm life and a source of nutrition for many. Each breed carries unique traits, from their plumage to their personality.</p>
+        </div>
+    </div>
+</body>
+</html>
